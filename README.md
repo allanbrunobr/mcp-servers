@@ -32,6 +32,20 @@ Para usar estes servidores MCP, você precisa:
 2. Configurar as variáveis de ambiente necessárias para cada servidor
 3. Adicionar os servidores à configuração do seu cliente MCP
 
+### Usando o Script de Inicialização
+
+Este repositório inclui um script de inicialização para facilitar a execução dos servidores MCP:
+
+```bash
+# Tornar o script executável (se necessário)
+chmod +x start.sh
+
+# Executar o script
+./start.sh
+```
+
+O script verificará se você tem Node.js e TypeScript instalados, instalará as dependências, compilará os servidores e os iniciará.
+
 ### Usando com Docker
 
 Este repositório inclui um Dockerfile e um arquivo docker-compose.yml para facilitar a execução dos servidores MCP em contêineres Docker.
