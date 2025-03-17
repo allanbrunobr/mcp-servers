@@ -32,6 +32,25 @@ Para usar estes servidores MCP, você precisa:
 2. Configurar as variáveis de ambiente necessárias para cada servidor
 3. Adicionar os servidores à configuração do seu cliente MCP
 
+### Usando com Docker
+
+Este repositório inclui um Dockerfile e um arquivo docker-compose.yml para facilitar a execução dos servidores MCP em contêineres Docker.
+
+Para executar os servidores usando Docker:
+
+```bash
+# Construir e iniciar os contêineres
+docker-compose up -d
+
+# Verificar os logs
+docker-compose logs -f
+
+# Parar os contêineres
+docker-compose down
+```
+
+Antes de executar, certifique-se de configurar as variáveis de ambiente necessárias no arquivo `docker-compose.yml`.
+
 ## Configuração
 
 Cada servidor MCP pode ter requisitos específicos de configuração. Consulte a documentação em cada pasta de servidor para obter instruções detalhadas.

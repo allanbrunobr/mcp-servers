@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  mcp-servers:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mcp-servers
+    ports:
+      - "3000-3010:3000-3010"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=production
+      # Adicione aqui as variáveis de ambiente necessárias para os servidores MCP
+      # Por exemplo:
+      # - GITHUB_TOKEN=seu_token_aqui
+      # - OPENAI_API_KEY=sua_chave_aqui
+      # - SERPER_API_KEY=sua_chave_aqui
+    restart: unless-stopped
