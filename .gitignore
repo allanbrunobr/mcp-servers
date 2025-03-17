@@ -109,3 +109,7 @@ debug.log
 # Temporary files
 tmp/
 temp/
+
+# Sensitive files
+src/gmail-server/credentials.json
+src/gmail-server/token.json
