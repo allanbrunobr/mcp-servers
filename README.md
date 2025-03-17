@@ -1,56 +1,45 @@
 # MCP Servers
 
-## Overview
+Este repositório contém uma coleção de servidores MCP (Model Context Protocol) que podem ser usados para estender as capacidades de modelos de linguagem como o Claude.
 
-This repository contains Model Context Protocol (MCP) servers and related resources. MCP enables communication between AI systems and locally running servers that provide additional tools and resources to extend AI capabilities.
+## O que é MCP?
 
-## What is MCP?
+O Model Context Protocol (MCP) é um protocolo que permite a comunicação entre modelos de linguagem e servidores locais, fornecendo ferramentas e recursos adicionais para estender as capacidades dos modelos.
 
-The Model Context Protocol (MCP) is a communication protocol that allows AI systems to interact with external tools and resources. It enables AI models to:
+## Servidores Disponíveis
 
-- Access external data sources
-- Execute commands on external systems
-- Utilize specialized tools for specific tasks
-- Interact with APIs and services
+Este repositório inclui vários servidores MCP, incluindo:
 
-## Repository Structure
+- **filesystem**: Acesso ao sistema de arquivos local
+- **flowise**: Integração com Flowise para fluxos de trabalho
+- **gcloud**: Integração com serviços do Google Cloud
+- **github**: Integração com GitHub
+- **mysql**: Integração com bancos de dados MySQL
+- **postgresql**: Integração com bancos de dados PostgreSQL
+- **stripe**: Integração com a API do Stripe
+- **supabase**: Integração com Supabase
+- **litellm**: Proxy para vários modelos de linguagem
+- **sonarqube**: Integração com SonarQube para análise de código
+- **Serper-search-mcp**: Integração com a API Serper para pesquisas na web
+- **firecrawl-mcp-server**: Ferramenta para web scraping
+- **wolframalpha-llm-mcp**: Integração com WolframAlpha
 
-This repository is organized to contain various MCP server implementations, each providing specific functionality:
+## Como Usar
 
-- **Weather Server**: Access real-time weather data
-- **File System Server**: Interact with the local file system
-- **Database Servers**: Connect to various database systems
-- **API Integration Servers**: Interface with external APIs
+Para usar estes servidores MCP, você precisa:
 
-## Getting Started
+1. Clonar este repositório
+2. Configurar as variáveis de ambiente necessárias para cada servidor
+3. Adicionar os servidores à configuração do seu cliente MCP
 
-### Prerequisites
+## Configuração
 
-- Node.js (v16 or higher)
-- npm or yarn package manager
-- Basic understanding of TypeScript/JavaScript
+Cada servidor MCP pode ter requisitos específicos de configuração. Consulte a documentação em cada pasta de servidor para obter instruções detalhadas.
 
-### Installation
+## Contribuição
 
-```bash
-# Clone the repository
-git clone https://github.com/allanbrunobr/mcp-servers.git
+Contribuições são bem-vindas! Se você deseja adicionar um novo servidor MCP ou melhorar um existente, sinta-se à vontade para abrir um pull request.
 
-# Navigate to the repository directory
-cd mcp-servers
+## Licença
 
-# Install dependencies
-npm install
-```
-
-## Usage
-
-Each server in this repository can be run independently. Navigate to the specific server directory and follow the instructions in its README file.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+Este projeto está licenciado sob a licença MIT.
