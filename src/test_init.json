@@ -1,0 +1,13 @@
+{
+  "type": "request",
+  "id": 1,
+  "method": "initialize",
+  "params": {
+    "implementation": {
+      "name": "test-client",
+      "version": "1.0.0"
+    },
+    "capabilities": {},
+    "protocolVersion": "2024-11-05"
+  }
+} 

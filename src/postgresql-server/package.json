@@ -1,0 +1,21 @@
+{
+  "name": "postgresql-server",
+  "version": "1.0.0",
+  "description": "MCP server for PostgreSQL database interactions",
+  "type": "module",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc && chmod +x build/index.js",
+    "start": "node build/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.1",
+    "pg": "^8.11.3",
+    "pg-promise": "^11.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "@types/pg": "^8.10.9",
+    "typescript": "^5.3.3"
+  }
+}

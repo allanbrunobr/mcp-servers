@@ -1,0 +1,35 @@
+{
+  "name": "@modelcontextprotocol/server-flowise",
+  "version": "0.6.2",
+  "description": "MCP server for using the Flowise API",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "mcp-server-flowise": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/*.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "@langchain/community": "^0.3.29",
+    "@langchain/core": "^0.3.39",
+    "@langchain/openai": "^0.4.3",
+    "@langchain/textsplitters": "^0.1.0",
+    "@modelcontextprotocol/sdk": "1.0.1",
+    "@types/node": "^22",
+    "axios": "^1.6.7",
+    "chromadb": "^1.5.1",
+    "langchain": "^0.3.15",
+    "zod": "^3.22.4",
+    "zod-to-json-schema": "^3.23.5"
+  },
+  "devDependencies": {
+    "shx": "^0.3.4",
+    "typescript": "^5.6.2"
+  }
+}

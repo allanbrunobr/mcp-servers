@@ -1,0 +1,21 @@
+{
+  "name": "n8n-server",
+  "version": "0.6.2",
+  "description": "MCP server for interacting with n8n",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('dist/index.js', '755')\"",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.0.1",
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.1"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^22.13.5",
+    "typescript": "^5.6.2"
+  }
+}

@@ -1,0 +1,7 @@
+npm uninstall @modelcontextprotocol/sdk
+npm install @modelcontextprotocol/sdk
+npm install dotenv
+npm install --save-dev @types/dotenv
+mv src/.env .env 2>/dev/null || true
+npm run build
+npm install

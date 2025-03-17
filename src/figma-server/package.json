@@ -1,0 +1,21 @@
+{
+    "name": "figma-server",
+    "version": "1.0.0",
+    "type": "module",
+    "main": "build/index.js",
+    "scripts": {
+        "build": "tsc && chmod +x build/index.js",
+        "start": "node build/index.js",
+        "dev": "tsc -w"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "MCP server for Figma integration",
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^0.3.1",
+        "@types/node": "^20.11.5",
+        "axios": "^1.6.5",
+        "typescript": "^5.3.3"
+    }
+}
